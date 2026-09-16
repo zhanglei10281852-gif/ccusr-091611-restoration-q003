@@ -1,0 +1,8 @@
+{
+  "project": "ceramic-assembly-hypotheses",
+  "node_types": ["fragment", "edge_feature", "hypothesis", "evidence", "review"],
+  "relation_types": ["describes", "supports", "contradicts", "contains", "supersedes"],
+  "hypothesis_states": ["draft", "under_review", "confirmed", "invalidated", "withdrawn"],
+  "required_hypothesis_fields": ["hypothesis_id", "version", "fragment_ids", "candidate_edges", "state"],
+  "score_range": [0.0, 1.0]
+}
