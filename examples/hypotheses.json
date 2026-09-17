@@ -1,4 +1,4 @@
 [
-  {"hypothesis_id":"hyp-21","version":1,"fragment_ids":["frag-01","frag-09"],"candidate_edges":[{"left":"frag-01:e2","right":"frag-09:e4","score":0.82}],"state":"under_review"},
-  {"hypothesis_id":"hyp-22","version":1,"fragment_ids":["frag-09","frag-14"],"candidate_edges":[{"left":"frag-09:e1","right":"frag-14:e3","score":0.77}],"state":"draft"}
+  {"hypothesis_id":"hyp-21","version":1,"fragment_ids":["frag-01","frag-09"],"candidate_edges":[{"left":"frag-01:e2","right":"frag-09:e4","score":0.82,"rotation_deg":178.5}],"state":"under_review"},
+  {"hypothesis_id":"hyp-22","version":1,"fragment_ids":["frag-09","frag-14"],"candidate_edges":[{"left":"frag-09:e1","right":"frag-14:e3","score":0.77,"rotation_deg":93.0}],"state":"draft"}
 ]

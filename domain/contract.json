@@ -4,5 +4,11 @@
   "relation_types": ["describes", "supports", "contradicts", "contains", "supersedes"],
   "hypothesis_states": ["draft", "under_review", "confirmed", "invalidated", "withdrawn"],
   "required_hypothesis_fields": ["hypothesis_id", "version", "fragment_ids", "candidate_edges", "state"],
-  "score_range": [0.0, 1.0]
+  "score_range": [0.0, 1.0],
+  "expert_roles": ["lead_restorer", "conservation_scientist", "archaeologist"],
+  "signature_policy": {
+    "required_roles": ["lead_restorer", "conservation_scientist"],
+    "min_endorsers": 2,
+    "veto_on_reject": true
+  }
 }

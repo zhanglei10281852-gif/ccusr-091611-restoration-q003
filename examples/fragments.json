@@ -1,0 +1,64 @@
+[
+  {
+    "fragment_id": "frag-01",
+    "vessel_id": "vessel-A",
+    "dimensions": {"length_mm": 82.4, "width_mm": 47.1, "thickness_mm": 6.0},
+    "edges": {
+      "e1": {"orientation_deg": 4.0, "curvature": 0.028, "roughness": 0.51, "summary": "夹砂灰陶断面,可见水平层理"},
+      "e2": {"orientation_deg": 91.0, "curvature": 0.034, "roughness": 0.44, "summary": "断面含云母片,氧化红胎"},
+      "e3": {"orientation_deg": 183.0, "curvature": 0.029, "roughness": 0.47, "summary": "釉面向断面过渡,有剥釉"},
+      "e4": {"orientation_deg": 268.0, "curvature": 0.031, "roughness": 0.40, "summary": "致密灰胎,孔隙率低"}
+    }
+  },
+  {
+    "fragment_id": "frag-07",
+    "vessel_id": "vessel-A",
+    "dimensions": {"length_mm": 55.0, "width_mm": 33.6, "thickness_mm": 5.8},
+    "edges": {
+      "e1": {"orientation_deg": 2.0, "curvature": 0.030, "roughness": 0.49, "summary": "灰胎夹细砂,层理清晰"},
+      "e2": {"orientation_deg": 95.0, "curvature": 0.033, "roughness": 0.43, "summary": "断面可见旋坯痕"},
+      "e3": {"orientation_deg": 181.0, "curvature": 0.027, "roughness": 0.52, "summary": "风化较重,断面酥粉"},
+      "e4": {"orientation_deg": 270.0, "curvature": 0.030, "roughness": 0.41, "summary": "致密灰胎,含云母片"}
+    }
+  },
+  {
+    "fragment_id": "frag-09",
+    "vessel_id": "vessel-A",
+    "dimensions": {"length_mm": 76.9, "width_mm": 44.3, "thickness_mm": 6.1},
+    "edges": {
+      "e1": {"orientation_deg": 8.0, "curvature": 0.032, "roughness": 0.46, "summary": "红胎断面,氧化层连续"},
+      "e2": {"orientation_deg": 88.0, "curvature": 0.029, "roughness": 0.50, "summary": "夹砂颗粒较粗"},
+      "e3": {"orientation_deg": 179.0, "curvature": 0.031, "roughness": 0.45, "summary": "釉下断面,有细小气孔"},
+      "e4": {"orientation_deg": 272.0, "curvature": 0.034, "roughness": 0.42, "summary": "含云母片,氧化红胎"}
+    }
+  },
+  {
+    "fragment_id": "frag-14",
+    "vessel_id": "vessel-A",
+    "dimensions": {"length_mm": 69.2, "width_mm": 38.8, "thickness_mm": 6.0},
+    "edges": {
+      "e1": {"orientation_deg": 355.0, "curvature": 0.030, "roughness": 0.48, "summary": "灰胎,层理与 frag-07 相近"},
+      "e2": {"orientation_deg": 93.0, "curvature": 0.032, "roughness": 0.44, "summary": "断面平整,旋坯痕明显"},
+      "e3": {"orientation_deg": 186.0, "curvature": 0.033, "roughness": 0.45, "summary": "红胎断面,氧化层连续"},
+      "e4": {"orientation_deg": 271.0, "curvature": 0.028, "roughness": 0.53, "summary": "风化边,断面酥粉"}
+    }
+  },
+  {
+    "fragment_id": "frag-20",
+    "vessel_id": "vessel-B",
+    "dimensions": {"length_mm": 48.5, "width_mm": 30.2, "thickness_mm": 4.2},
+    "edges": {
+      "e1": {"orientation_deg": 10.0, "curvature": 0.041, "roughness": 0.38, "summary": "白胎细腻,近瓷"},
+      "e2": {"orientation_deg": 100.0, "curvature": 0.039, "roughness": 0.36, "summary": "薄胎,断面致密"}
+    }
+  },
+  {
+    "fragment_id": "frag-21",
+    "vessel_id": "vessel-B",
+    "dimensions": {"length_mm": 45.1, "width_mm": 28.7, "thickness_mm": 4.1},
+    "edges": {
+      "e1": {"orientation_deg": 190.0, "curvature": 0.040, "roughness": 0.37, "summary": "白胎细腻,与 frag-20 胎质一致"},
+      "e2": {"orientation_deg": 280.0, "curvature": 0.042, "roughness": 0.35, "summary": "薄胎,断面致密"}
+    }
+  }
+]
