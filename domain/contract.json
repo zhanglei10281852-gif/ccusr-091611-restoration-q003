@@ -1,8 +1,32 @@
 {
   "project": "ceramic-assembly-hypotheses",
-  "node_types": ["fragment", "edge_feature", "hypothesis", "evidence", "review"],
-  "relation_types": ["describes", "supports", "contradicts", "contains", "supersedes"],
+  "node_types": ["fragment", "edge_feature", "candidate", "hypothesis", "evidence", "review"],
+  "relation_types": ["describes", "joins", "supports", "contradicts", "contains", "reviews", "supersedes"],
   "hypothesis_states": ["draft", "under_review", "confirmed", "invalidated", "withdrawn"],
   "required_hypothesis_fields": ["hypothesis_id", "version", "fragment_ids", "candidate_edges", "state"],
-  "score_range": [0.0, 1.0]
+  "score_range": [0.0, 1.0],
+  "required_candidate_signatures": ["curve_profile", "cross_section"],
+  "candidate_rotation_steps": [0, 90, 180, 270],
+  "review_decisions": ["approve", "request_changes", "reject"],
+  "expert_roles": ["lead_restorer", "restorer", "materials_analyst", "conservator"],
+  "roles": {
+    "lead_restorer": {"can_confirm": true, "can_invalidate": true},
+    "restorer": {"can_confirm": false, "can_invalidate": false},
+    "materials_analyst": {"can_confirm": false, "can_invalidate": false},
+    "conservator": {"can_confirm": false, "can_invalidate": false}
+  },
+  "event_types": [
+    "expert_registered",
+    "fragment_registered",
+    "evidence_recorded",
+    "candidate_proposed",
+    "edge_signature_observed",
+    "hypothesis_created",
+    "hypothesis_revised",
+    "hypothesis_submitted",
+    "review_cast",
+    "hypothesis_confirmed",
+    "hypothesis_invalidated",
+    "hypothesis_withdrawn"
+  ]
 }

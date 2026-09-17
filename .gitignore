@@ -4,6 +4,10 @@
 node_modules/
 .venv/
 venv/
+data/
+*.db
+*.db-wal
+*.db-shm
 dist/
 build/
 coverage/

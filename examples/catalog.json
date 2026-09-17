@@ -1,0 +1,87 @@
+{
+  "group_id": "vessel-guan-07",
+  "description": "出土陶瓮 vessel-guan-07：frag-09 肩部残片被两组高分拼接方案同时需要",
+  "experts": [
+    {"expert_id": "zhao", "name": "赵师傅", "role": "lead_restorer"},
+    {"expert_id": "chen", "name": "陈修复师", "role": "restorer"},
+    {"expert_id": "lin", "name": "林材料分析师", "role": "materials_analyst"}
+  ],
+  "fragments": [
+    {
+      "fragment_id": "frag-01", "group_id": "vessel-guan-07",
+      "registered_by": "chen",
+      "dimensions": {"length_mm": 142.5, "width_mm": 98.0, "thickness_mm": 7.2},
+      "features": [
+        {"feature_id": "e1", "kind": "rim_face", "note": "口沿外侧面"},
+        {"feature_id": "e2", "kind": "break", "note": "与肩部分离的断裂面，弧度连续"}
+      ]
+    },
+    {
+      "fragment_id": "frag-09", "group_id": "vessel-guan-07",
+      "registered_by": "chen",
+      "dimensions": {"length_mm": 121.0, "width_mm": 104.5, "thickness_mm": 6.8},
+      "features": [
+        {"feature_id": "e1", "kind": "break", "note": "前侧断裂面"},
+        {"feature_id": "e4", "kind": "break", "note": "肩颈交接断裂面"}
+      ]
+    },
+    {
+      "fragment_id": "frag-14", "group_id": "vessel-guan-07",
+      "registered_by": "chen",
+      "dimensions": {"length_mm": 156.5, "width_mm": 132.0, "thickness_mm": 6.5},
+      "features": [
+        {"feature_id": "e3", "kind": "break", "note": "肩部下方断裂面"},
+        {"feature_id": "e5", "kind": "break", "note": "下腹侧断裂面"}
+      ]
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "cand-21", "group_id": "vessel-guan-07",
+      "left": {"fragment_id": "frag-01", "feature_id": "e2"},
+      "right": {"fragment_id": "frag-09", "feature_id": "e4"},
+      "score": 0.82, "rotation": 0, "proposed_by": "chen",
+      "note": "口沿-肩部，算法高分方案 A"
+    },
+    {
+      "candidate_id": "cand-22", "group_id": "vessel-guan-07",
+      "left": {"fragment_id": "frag-09", "feature_id": "e1"},
+      "right": {"fragment_id": "frag-14", "feature_id": "e3"},
+      "score": 0.77, "rotation": 90, "proposed_by": "chen",
+      "note": "肩部-上腹，与方案 A 互斥；缺横截面签名"
+    }
+  ],
+  "evidence": [
+    {"evidence_id": "ev-profile-21", "group_id": "vessel-guan-07",
+     "kind": "3d_scan", "summary": "frag-01:e2 与 frag-09:e4 弧度曲线在 0.9mm 内吻合",
+     "recorded_by": "lin",
+     "target": {"type": "candidate", "id": "cand-21"}, "stance": "supports"},
+    {"evidence_id": "ev-section-21", "group_id": "vessel-guan-07",
+     "kind": "cross_section", "summary": "楔形断口倾角 31.5°，三层盘筑纹理可对位",
+     "recorded_by": "lin",
+     "target": {"type": "candidate", "id": "cand-21"}, "stance": "supports"},
+    {"evidence_id": "ev-profile-22", "group_id": "vessel-guan-07",
+     "kind": "3d_scan", "summary": "frag-09:e1 与 frag-14:e3 曲线近似，容差偏大",
+     "recorded_by": "lin",
+     "target": {"type": "candidate", "id": "cand-22"}, "stance": "supports"}
+  ],
+  "signatures": [
+    {"candidate_id": "cand-21", "signature": "curve_profile",
+     "value": {"arc_radius_mm": 61.4, "tolerance_mm": 0.9},
+     "observed_by": "lin", "evidence_id": "ev-profile-21"},
+    {"candidate_id": "cand-21", "signature": "cross_section",
+     "value": {"wedge_angle_deg": 31.5, "layer_count": 3},
+     "observed_by": "lin", "evidence_id": "ev-section-21"},
+    {"candidate_id": "cand-22", "signature": "curve_profile",
+     "value": {"arc_radius_mm": 70.2, "tolerance_mm": 1.4},
+     "observed_by": "lin", "evidence_id": "ev-profile-22"}
+  ],
+  "hypotheses": [
+    {"hypothesis_id": "hyp-21", "fragment_ids": ["frag-01", "frag-09"],
+     "candidate_ids": ["cand-21"], "created_by": "chen",
+     "note": "口沿与肩部高分拼接方案"},
+    {"hypothesis_id": "hyp-22", "fragment_ids": ["frag-09", "frag-14"],
+     "candidate_ids": ["cand-22"], "created_by": "chen",
+     "note": "肩部与上腹拼接方案，frag-09 与 hyp-21 互斥"}
+  ]
+}
